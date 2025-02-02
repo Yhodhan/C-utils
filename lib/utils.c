@@ -1,6 +1,11 @@
 #include "utils.h"
 #include <stdint.h>
 
+/*
+  -----------------
+   32 bits numbers
+  -----------------
+*/
 void to_le_bytes(uint32_t value, uint8_t **bytes) {
   uint8_t *buffer = (uint8_t *)malloc(sizeof(short) * 5);
   for (unsigned short i = 0; i < 4; i++) {
