@@ -13,6 +13,7 @@ all: $(TARGET)
 # linking stage
 # picks all the object files and produce the binary output (TARGET)
 $(TARGET): $(OBJ)
+	@mkdir -p build
 	@$(CC) -o $@ $^
 
 # compile stage
