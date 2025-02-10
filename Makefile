@@ -23,4 +23,4 @@ $(TARGET): $(OBJ)
 
 clean:
 	rm **/*.o
-	rm build/bin
+	rm -rf build/
